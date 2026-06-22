@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Use the WanderLux trip cost calculator to estimate travel package prices.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLux Travel Agency | Trip Cost Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav">
+        <h1 class="logo">WanderLux</h1>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations/Services</a></li>
+            <li><a href="calculator.html" class="active">Trip Calculator</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-title">
+        <h2>Trip Cost Calculator</h2>
+        <p>Estimate your travel cost by entering destination, travellers, days and travel style.</p>
+    </section>
+
+    <section class="form-section fade">
+        <form class="box-form" onsubmit="return false;">
+
+            <label for="place">Destination</label>
+            <select id="place">
+                <option value="">Select destination</option>
+                <option value="bali">Bali</option>
+                <option value="paris">Paris</option>
+                <option value="dubai">Dubai</option>
+                <option value="maldives">Maldives</option>
+                <option value="singapore">Singapore</option>
+            </select>
+
+            <label for="people">Number of Travellers</label>
+            <input type="number" id="people" min="1" placeholder="Example: 2">
+
+            <label for="days">Number of Days</label>
+            <input type="number" id="days" min="1" placeholder="Example: 5">
+
+            <label for="style">Travel Style</label>
+            <select id="style">
+                <option value="">Select travel style</option>
+                <option value="budget">Budget</option>
+                <option value="standard">Standard</option>
+                <option value="luxury">Luxury</option>
+            </select>
+
+            <button type="button" onclick="tripThing()">Calculate Cost</button>
+
+            <p id="totalShow" class="result-text"></p>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 WanderLux Travel Agency. All rights reserved.</p>
+</footer>
+
+<script src="js/calc.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

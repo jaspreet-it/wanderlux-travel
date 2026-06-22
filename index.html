@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WanderLux Travel Agency offers holiday packages, guided tours, honeymoon trips and custom travel planning.">
+    <meta name="keywords" content="travel agency, holiday packages, tours, honeymoon, trip calculator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLux Travel Agency | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav">
+        <h1 class="logo">WanderLux</h1>
+
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="destinations.html">Destinations/Services</a></li>
+            <li><a href="calculator.html">Trip Calculator</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Plan Your Dream Holiday With WanderLux</h2>
+            <p>Personalised holiday packages, guided tours, flights, hotels and custom travel planning for domestic and international destinations.</p>
+            <a href="calculator.html" class="btn">Estimate Trip Cost</a>
+        </div>
+    </section>
+
+    <section class="section fade">
+        <h2>Featured Destinations</h2>
+        <p class="center-text">Explore some of our popular travel destinations.</p>
+
+        <div class="banner-box">
+            <img id="bannerImg" src="images/bali.jpg" alt="Featured travel destination">
+            <h3 id="bannerText">Bali Holiday Package</h3>
+        </div>
+    </section>
+
+    <section class="section fade">
+        <h2>Popular Travel Packages</h2>
+
+        <div class="cards">
+            <article class="card">
+                <img src="images/family-trip.jpg" alt="Family holiday package">
+                <h3>Family Holidays</h3>
+                <p>Comfortable and safe holiday planning for families with hotels, local tours and transport support.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/honeymoon.jpg" alt="Honeymoon travel package">
+                <h3>Honeymoon Specials</h3>
+                <p>Romantic travel packages for couples looking for peaceful beaches, resorts and private experiences.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/guided-tour.jpg" alt="Guided tour package">
+                <h3>Guided Tours</h3>
+                <p>Enjoy guided city tours, cultural trips and adventure activities with planned schedules.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section light fade">
+        <h2>Why Choose WanderLux?</h2>
+        <p>
+            WanderLux focuses on personalised customer service, affordable travel options and reliable support.
+            Our goal is to make travel planning easier for customers by providing clear information and simple booking support.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 WanderLux Travel Agency. All rights reserved.</p>
+</footer>
+
+<script>
+    const pics = [
+        "images/bali.jpg",
+        "images/paris.jpg",
+        "images/dubai.jpg",
+        "images/maldives.jpg"
+    ];
+
+    const words = [
+        "Bali Holiday Package",
+        "Paris City Escape",
+        "Dubai Luxury Tour",
+        "Maldives Beach Resort"
+    ];
+
+    let n = 0;
+
+    function changeBanner() {
+        n++;
+
+        if (n >= pics.length) {
+            n = 0;
+        }
+
+        document.getElementById("bannerImg").src = pics[n];
+        document.getElementById("bannerText").innerHTML = words[n];
+    }
+
+    setInterval(changeBanner, 2500);
+</script>
+
+<script src="js/scroll.js"></script>
+</body>
+</html>

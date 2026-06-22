@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact WanderLux Travel Agency for travel packages, appointments and general inquiries.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLux Travel Agency | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav">
+        <h1 class="logo">WanderLux</h1>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations/Services</a></li>
+            <li><a href="calculator.html">Trip Calculator</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-title">
+        <h2>Contact Us</h2>
+        <p>Contact WanderLux Travel Agency for package details, appointments and travel questions.</p>
+    </section>
+
+    <section class="contact-grid fade">
+
+        <div class="contact-info">
+            <h2>Agency Details</h2>
+            <p><strong>Address:</strong> 25 Collins Street, Melbourne, VIC, Australia</p>
+            <p><strong>Phone:</strong> +61 3 9000 1234</p>
+            <p><strong>Email:</strong> info@wanderluxtravel.com</p>
+
+            <div class="map-box">
+                
+                <p><iframe src="https://www.google.com/maps?q=25%20Collins%20Street%20Melbourne%20VIC%20Australia&output=embed" width="100%" height="250" style="border:0;" loading="lazy" title="WanderLux Travel Agency location map"></iframe></p>
+            </div>
+        </div>
+
+        <form class="box-form" onsubmit="return contactThing();">
+
+            <label for="cname">Name</label>
+            <input type="text" id="cname" placeholder="Enter your name">
+
+            <label for="cemail">Email</label>
+            <input type="email" id="cemail" placeholder="Enter your email">
+
+            <label for="csubject">Subject</label>
+            <input type="text" id="csubject" placeholder="Enter subject">
+
+            <label for="cmessage">Message</label>
+            <textarea id="cmessage" rows="5" placeholder="Enter message"></textarea>
+
+            <button type="submit">Send Email</button>
+
+            <p id="contactMsg" class="result-text"></p>
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 WanderLux Travel Agency. All rights reserved.</p>
+</footer>
+
+<script src="js/form.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>
